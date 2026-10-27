@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -6,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SanRPG | Tutorialok</title>
   <style>
-    * { box-sizing: border-box; }
+    * { 
+      box-sizing: border-box; 
+    }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #111214;
       color: #f4f4f4;
     }
@@ -17,52 +18,236 @@
       padding: 24px;
       border-bottom: 1px solid #303034;
       text-align: center;
+      background: #16171b;
     }
-    header strong { font-size: 28px; }
-    header span { color: #e4b64d; }
+    header strong { 
+      font-size: 28px; 
+      letter-spacing: 1px;
+    }
+    header span { 
+      color: #e4b64d; 
+    }
+    header div {
+      color: #9a9ab0;
+      font-size: 14px;
+      margin-top: 4px;
+    }
     main {
-      max-width: 850px;
-      margin: 70px auto;
-      padding: 24px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 24px;
     }
-    h1 { font-size: 42px; }
-    h1 span { color: #e4b64d; }
-    p { color: #b9b9c0; line-height: 1.7; }
+    .breadcrumb {
+      color: #e4b64d;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    h1 { 
+      font-size: 38px; 
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    h1 span { 
+      color: #e4b64d; 
+    }
+    .intro-text {
+      color: #b9b9c0;
+      line-height: 1.7;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
     .card {
-      margin-top: 30px;
-      padding: 24px;
+      margin-top: 24px;
+      padding: 28px;
       background: #1b1c20;
       border: 1px solid #33343a;
       border-radius: 12px;
     }
+    .card h2 {
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid #2a2b30;
+      padding-bottom: 12px;
+    }
+    .badge {
+      background: #e4b64d;
+      color: #111214;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+    p, li { 
+      color: #b9b9c0; 
+      line-height: 1.7; 
+      font-size: 15px;
+    }
+    ol, ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    li strong {
+      color: #ffffff;
+    }
+    a {
+      color: #e4b64d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .alert-box {
+      background: rgba(228, 182, 77, 0.1);
+      border-left: 4px solid #e4b64d;
+      padding: 14px 18px;
+      margin: 16px 0;
+      border-radius: 4px;
+    }
+    .alert-box p {
+      margin: 0;
+      color: #dcdce2;
+    }
+    .btn {
+      display: inline-block;
+      background: #e4b64d;
+      color: #111214;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 10px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #f0c563;
+      text-decoration: none;
+    }
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 40px 20px;
       color: #777;
+      font-size: 14px;
+      border-top: 1px solid #222328;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <strong>San<span>RPG</span></strong>
     <div>Tutorial központ</div>
   </header>
+
   <main>
-    <p>SANRPG / ÚTMUTATÓK</p>
+    <div class="breadcrumb">SANRPG / ÚTMUTATÓK</div>
     <h1>Minden, amit tudnod kell a <span>SanRPG-ről.</span></h1>
-    <p>
-      Útmutatók, hasznos információk és videók,
-      hogy könnyebben elindulj a szerveren.
+    <p class="intro-text">
+      Még nem játszottál GTA Roleplay-t? Semmi gond! Ebben az útmutatóban lépésről lépésre megmutatjuk, hogyan szerezd be a játékot, hogyan telepítsd a FiveM-et, és hogyan csatlakozz hozzánk a szerverre.
     </p>
+
+    <!-- 1. LÉPÉS -->
     <section class="card">
-      <h2>Hamarosan érkeznek az útmutatók!</h2>
+      <h2><span class="badge">1. Lépés</span> A GTA V beszerezése (Eredeti példány)</h2>
       <p>
-        Ezen az oldalon találod majd a szerverrel,
-        a játékmenettel és a fontos tudnivalókkal
-        kapcsolatos leírásokat.
+        A SanRPG szerverére való csatlakozáshoz <strong>mindenképpen szükség van az eredeti GTA V-re PC-n</strong>. A tört (kalóz) verziókkal a FiveM sajnos nem működik!
       </p>
+
+      <p>A játékot az alábbi hivatalos áruházak bármelyikében megvásárolhatod:</p>
+      <ul>
+        <li><strong>Steam:</strong> Keress rá a „Grand Theft Auto V” kifejezésre a Steam áruházban.</li>
+        <li><strong>Epic Games Store:</strong> Vedd meg vagy töltsd le az Epic Games alkalmazásból.</li>
+        <li><strong>Rockstar Games Launcher:</strong> Közvetlenül a fejlesztőktől is megveheted.</li>
+      </ul>
+
+      <div class="alert-box">
+        <p><strong>Fontos:</strong> Ha korábban ingyen elmentetted a GTA V-öt az Epic Games-ben, az is tökéletesen jó! Nem kell újra megvenned.</p>
+      </div>
     </section>
+
+    <!-- 2. LÉPÉS -->
+    <section class="card">
+      <h2><span class="badge">2. Lépés</span> A GTA V letöltése és elindítása</h2>
+      <ol>
+        <li>Töltsd le a játékot abban a programban (Steam / Epic Games / Rockstar Launcher), ahol megvásároltad.</li>
+        <li>Várd meg, amíg a letöltés és a telepítés teljesen befejeződik (ez eltarthat egy ideig, mert a játék elég nagy).</li>
+        <li><strong>Nagyon fontos lépés:</strong> Indítsd el a GTA V-öt legalább egyszer normálisan (Story Mode/Sztori mód)!
+          <ul>
+            <li>Engedd, hogy beletöltsön a játékba az első küldetésig.</li>
+            <li>Ezután nyugodtan bezárhatod a GTA V-öt. Ezzel a lépéssel a számítógéped létrehozza a szükséges fájlokat a FiveM számára.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 3. LÉPÉS -->
+    <section class="card">
+      <h2><span class="badge">3. Lépés</span> A FiveM letöltése és telepítése</h2>
+      <p>A FiveM az a program, ami lehetővé teszi, hogy egyedi, módosított szervereken (mint a SanRPG) játszhass.</p>
+      
+      <ol>
+        <li>Nyisd meg a FiveM hivatalos weboldalát: <a href="https://fivem.net/" target="_blank">fivem.net</a></li>
+        <li>Kattints a piros <strong>„Download Client”</strong> gombra, majd fogadd el a feltételeket.</li>
+        <li>Nyisd meg a letöltött <code>FiveM.exe</code> fájlt.</li>
+        <li>A telepítő elindul és automatikusan frissíti magát.</li>
+        <li><strong>Ha megkérdezi, hol van a GTA V:</strong> Tallózd be neki azt a mappát, ahova a játékot telepítetted (például: <code>C:\Program Files\Steam\steamapps\common\Grand Theft Auto V</code> vagy <code>Epic Games\GTAV</code>).</li>
+      </ol>
+    </section>
+
+    <!-- 4. LÉPÉS -->
+    <section class="card">
+      <h2><span class="badge">4. Lépés</span> Discord és Fiók összekötés</h2>
+      <p>A szerver használatához érdemes felkészülni pár aprósággal:</p>
+      <ul>
+        <li><strong>Legyen megnyitva a Discord:</strong> Mielőtt elindítod a FiveM-et, mindig legyen megnyitva a Discord a gépeden. A szerver azonosításra használja.</li>
+        <li><strong>Lépj be a Discord szerverünkre:</strong> Csatlakozz a SanRPG közösséghez, hogy ne maradj le a szabályzatról, frissítésekről és a segítségről!</li>
+      </ul>
+      <a href="#" class="btn">Csatlakozás a Discord szerverre</a>
+    </section>
+
+    <!-- 5. LÉPÉS -->
+    <section class="card">
+      <h2><span class="badge">5. Lépés</span> Csatlakozás a SanRPG szerverre</h2>
+      <ol>
+        <li>Indítsd el a <strong>FiveM</strong>-et az asztalról.</li>
+        <li>Kattints a felső menüsávban a <strong>Play (Játék)</strong> gombra, vagy nyomd meg az <code>F8</code> billentyűt a billentyűzeteden.</li>
+        <li>A megnyíló fekete konzol ablakba írd be a következőt:
+          <br><br>
+          <code>connect play.sanrpg.hu</code> <em>(vagy a szerver pontos IP címét)</em>
+        </li>
+        <li>Nyomj egy <strong>Entert</strong>, és már tölt be is a szerver!</li>
+      </ol>
+
+      <div class="alert-box">
+        <p><strong>Tipp kezdőknek:</strong> Az első csatlakozásnál a FiveM letölti a szerverhez tartozó egyedi fájlokat (pályák, autók, ruhák). Ez a gépedtől és a netedtől függően pár percig eltarthat. Légy türelemmel!</p>
+      </div>
+    </section>
+
+    <!-- GYAKORI HIBÁK -->
+    <section class="card">
+      <h2>Gyakran Ismételt Kérdések & Hibaelhárítás</h2>
+      
+      <p><strong>Működik a játék PS4-en, PS5-ön vagy Xbox-on?</strong><br>
+      Nem. A FiveM és a SanRPG kizárólag <strong>PC-n (számítógépen)</strong> érhető el.</p>
+
+      <p><strong>Azt írja a FiveM, hogy nem találja a GTA V-öt! Mit tegyek?</strong><br>
+      Győződj meg róla, hogy a GTA V telepítve van, és legalább egyszer elindítottad a sztori módot. Ha kérdezi, kézzel mutasd meg neki a <code>GTA5.exe</code> fájl helyét.</p>
+
+      <p><strong>Elakadtál vagy segítségre van szükséged?</strong><br>
+      Ha bármilyen hibába ütközöl, nyiss egy jegyet (ticketet) a Discord szerverünkön, és az admincsapatunk örömmel segít neked!</p>
+    </section>
+
   </main>
+
   <footer>SanRPG Tutorial · Minden jog fenntartva.</footer>
+
 </body>
 </html>
