@@ -1,253 +1,35 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SanRPG | Tutorialok</title>
-  <style>
-    * { 
-      box-sizing: border-box; 
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #111214;
-      color: #f4f4f4;
-    }
-    header {
-      padding: 24px;
-      border-bottom: 1px solid #303034;
-      text-align: center;
-      background: #16171b;
-    }
-    header strong { 
-      font-size: 28px; 
-      letter-spacing: 1px;
-    }
-    header span { 
-      color: #e4b64d; 
-    }
-    header div {
-      color: #9a9ab0;
-      font-size: 14px;
-      margin-top: 4px;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 24px;
-    }
-    .breadcrumb {
-      color: #e4b64d;
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    h1 { 
-      font-size: 38px; 
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    h1 span { 
-      color: #e4b64d; 
-    }
-    .intro-text {
-      color: #b9b9c0;
-      line-height: 1.7;
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    .card {
-      margin-top: 24px;
-      padding: 28px;
-      background: #1b1c20;
-      border: 1px solid #33343a;
-      border-radius: 12px;
-    }
-    .card h2 {
-      margin-top: 0;
-      color: #ffffff;
-      font-size: 22px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      border-bottom: 1px solid #2a2b30;
-      padding-bottom: 12px;
-    }
-    .badge {
-      background: #e4b64d;
-      color: #111214;
-      font-size: 14px;
-      font-weight: bold;
-      padding: 4px 10px;
-      border-radius: 20px;
-    }
-    p, li { 
-      color: #b9b9c0; 
-      line-height: 1.7; 
-      font-size: 15px;
-    }
-    ol, ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    li strong {
-      color: #ffffff;
-    }
-    a {
-      color: #e4b64d;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .alert-box {
-      background: rgba(228, 182, 77, 0.1);
-      border-left: 4px solid #e4b64d;
-      padding: 14px 18px;
-      margin: 16px 0;
-      border-radius: 4px;
-    }
-    .alert-box p {
-      margin: 0;
-      color: #dcdce2;
-    }
-    .btn {
-      display: inline-block;
-      background: #e4b64d;
-      color: #111214;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-top: 10px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .btn:hover {
-      background: #f0c563;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      color: #777;
-      font-size: 14px;
-      border-top: 1px solid #222328;
-      margin-top: 60px;
-    }
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#111214"><meta name="description" content="SanRPG útmutatóközpont – GTA V vásárlás, telepítés, FiveM és csatlakozás.">
+<title>SanRPG | Tutorial központ</title>
+<style>
+:root{--bg:#111214;--panel:#1a1b20;--panel2:#141519;--line:#303139;--text:#f4f4f5;--muted:#b5b6bf;--gold:#e4b64d;--gold2:#f2ce78;--green:#80d6a3;--red:#ff9292}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 Arial,Helvetica,sans-serif}a{color:var(--gold2);text-decoration:none}a:hover{text-decoration:underline}.top{position:sticky;top:0;z-index:10;background:#111214f2;border-bottom:1px solid var(--line)}.topin{max-width:1200px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;font-size:25px;line-height:1.1;color:#fff;letter-spacing:-1px}.brand span{color:var(--gold)}.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--muted);margin-top:5px;text-transform:uppercase}.topnav{display:flex;gap:18px;font-size:13px}.topnav a{color:var(--muted)}.topnav a.top-external{color:var(--gold2);padding:7px 10px;border:1px solid #51442a;border-radius:7px;background:#211d14}.topnav a.top-external:hover{background:#302817;text-decoration:none}.hero{max-width:1200px;margin:auto;padding:58px 22px 35px}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--gold);font-weight:bold}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.08;letter-spacing:-2px;margin:15px 0;max-width:800px}.hero h1 span{color:var(--gold)}.hero p{max-width:700px;color:var(--muted);font-size:17px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.btn{display:inline-block;padding:11px 16px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:#fff;font-weight:bold}.btn.primary{background:var(--gold);border-color:var(--gold);color:#17130a}.notice{max-width:1156px;margin:0 auto 28px;padding:15px 18px;border:1px solid #65552d;background:#211d13;border-radius:11px;color:#e8d8ad}.notice strong{color:var(--gold2)}.layout{max-width:1200px;margin:auto;padding:0 22px 60px;display:grid;grid-template-columns:245px minmax(0,1fr);gap:24px;align-items:start}.side{position:sticky;top:80px;padding:16px;border:1px solid var(--line);background:var(--panel);border-radius:14px}.search{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:11px;color:white;margin-bottom:12px;outline:none}.search:focus{border-color:var(--gold)}.navlabel{font-size:10px;letter-spacing:1.5px;color:#858691;font-weight:bold;margin:15px 8px 5px}.side a{display:block;color:#c0c1c9;font-size:13px;padding:8px 9px;border-radius:7px}.side a:hover,.side a.active{background:#2a2519;color:var(--gold2);text-decoration:none}.section{padding:25px;margin-bottom:20px;border:1px solid var(--line);background:var(--panel);border-radius:14px;scroll-margin-top:85px}.head{display:flex;gap:13px;margin-bottom:17px;align-items:flex-start}.num{height:37px;min-width:37px;display:grid;place-items:center;border-radius:10px;background:#2b2416;color:var(--gold2);font-weight:900}.section h2{font-size:24px;line-height:1.25;margin:1px 0 6px;letter-spacing:-.5px}.section h3{font-size:17px;margin:22px 0 7px}.lead{margin:0;color:var(--muted)}p{color:#c4c5cd;margin:9px 0}.steps{display:grid;gap:10px;margin:16px 0}.step{display:grid;grid-template-columns:27px 1fr;gap:11px;padding:13px;background:var(--panel2);border:1px solid #2c2d34;border-radius:10px}.stepn{height:26px;width:26px;border-radius:8px;display:grid;place-items:center;background:#302817;color:var(--gold2);font-weight:bold;font-size:12px}.step p{font-size:14px;margin:4px 0 0}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}.card{background:var(--panel2);border:1px solid var(--line);border-radius:11px;padding:16px}.card h3{margin:0 0 6px}.card p{font-size:13px}.tag{display:inline-block;font-size:10px;letter-spacing:.5px;font-weight:bold;background:#2a2416;color:var(--gold2);border-radius:5px;padding:4px 7px;margin-bottom:8px}.callout{padding:13px 15px;margin:15px 0;background:#211d14;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;font-size:14px;color:#ddd3b8}.callout.warn{background:#251719;border-color:var(--red);color:#efcdcd}.callout.good{background:#142019;border-color:var(--green);color:#cce9d7}ul.check{list-style:none;padding:0}ul.check li{padding:6px 0 6px 25px;position:relative;color:#c7c8d0}ul.check li:before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:bold}code{font-family:Consolas,monospace;color:var(--gold2);background:#101115;border:1px solid var(--line);border-radius:4px;padding:2px 5px}.links{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}.links a{display:inline-block;padding:8px 11px;border:1px solid var(--line);border-radius:8px;background:var(--panel2);font-size:13px;font-weight:bold}.links a:hover{border-color:var(--gold);text-decoration:none}details{border:1px solid var(--line);background:var(--panel2);border-radius:9px;margin:9px 0}summary{padding:12px 14px;cursor:pointer;font-weight:bold}details p{padding:0 14px 13px;margin:0;font-size:14px}.progressbox{padding:15px;border:1px solid var(--line);background:var(--panel2);border-radius:10px}.progressline{display:flex;justify-content:space-between;color:var(--muted);font-size:13px;margin-bottom:8px}.bar{height:7px;background:#33343a;border-radius:9px;overflow:hidden}.bar div{height:100%;width:0;background:var(--gold);transition:width .2s}.task{display:flex;gap:9px;padding:8px 0;color:#d0d0d7;font-size:14px}.task input{accent-color:var(--gold);margin-top:5px}footer{text-align:center;padding:28px 20px;border-top:1px solid var(--line);color:#858691;font-size:12px}.backtop{position:fixed;right:18px;bottom:18px;background:var(--gold);color:#17130a;border-radius:10px;width:42px;height:42px;display:grid;place-items:center;font-weight:bold}.hidden{display:none!important}@media(max-width:850px){.layout{grid-template-columns:1fr}.side{position:static}.topin{align-items:flex-start}.topnav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:7px}.topnav a{font-size:12px}.hero{padding-top:38px}}@media(max-width:560px){.topin{padding:12px 14px;gap:10px}.brand{font-size:22px}.topnav{max-width:58%;gap:5px}.topnav a{font-size:11px;padding:5px 6px}.topnav a.top-external{padding:5px 6px}.section{padding:18px}.cards{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}.section h2{font-size:21px}.layout{padding-left:14px;padding-right:14px}.notice{margin-left:14px;margin-right:14px}}
+</style>
 </head>
 <body>
-
-  <header>
-    <strong>San<span>RPG</span></strong>
-    <div>Tutorial központ</div>
-  </header>
-
-  <main>
-    <div class="breadcrumb">SANRPG / ÚTMUTATÓK</div>
-    <h1>Minden, amit tudnod kell a <span>SanRPG-ről.</span></h1>
-    <p class="intro-text">
-      Még nem játszottál GTA Roleplay-t? Semmi gond! Ebben az útmutatóban lépésről lépésre megmutatjuk, hogyan szerezd be a játékot, hogyan telepítsd a FiveM-et, és hogyan csatlakozz hozzánk a szerverre.
-    </p>
-
-    <!-- 1. LÉPÉS -->
-    <section class="card">
-      <h2><span class="badge">1. Lépés</span> A GTA V beszerezése (Eredeti példány)</h2>
-      <p>
-        A SanRPG szerverére való csatlakozáshoz <strong>mindenképpen szükség van az eredeti GTA V-re PC-n</strong>. A tört (kalóz) verziókkal a FiveM sajnos nem működik!
-      </p>
-
-      <p>A játékot az alábbi hivatalos áruházak bármelyikében megvásárolhatod:</p>
-      <ul>
-        <li><strong>Steam:</strong> Keress rá a „Grand Theft Auto V” kifejezésre a Steam áruházban.</li>
-        <li><strong>Epic Games Store:</strong> Vedd meg vagy töltsd le az Epic Games alkalmazásból.</li>
-        <li><strong>Rockstar Games Launcher:</strong> Közvetlenül a fejlesztőktől is megveheted.</li>
-      </ul>
-
-      <div class="alert-box">
-        <p><strong>Fontos:</strong> Ha korábban ingyen elmentetted a GTA V-öt az Epic Games-ben, az is tökéletesen jó! Nem kell újra megvenned.</p>
-      </div>
-    </section>
-
-    <!-- 2. LÉPÉS -->
-    <section class="card">
-      <h2><span class="badge">2. Lépés</span> A GTA V letöltése és elindítása</h2>
-      <ol>
-        <li>Töltsd le a játékot abban a programban (Steam / Epic Games / Rockstar Launcher), ahol megvásároltad.</li>
-        <li>Várd meg, amíg a letöltés és a telepítés teljesen befejeződik (ez eltarthat egy ideig, mert a játék elég nagy).</li>
-        <li><strong>Nagyon fontos lépés:</strong> Indítsd el a GTA V-öt legalább egyszer normálisan (Story Mode/Sztori mód)!
-          <ul>
-            <li>Engedd, hogy beletöltsön a játékba az első küldetésig.</li>
-            <li>Ezután nyugodtan bezárhatod a GTA V-öt. Ezzel a lépéssel a számítógéped létrehozza a szükséges fájlokat a FiveM számára.</li>
-          </ul>
-        </li>
-      </ol>
-    </section>
-
-    <!-- 3. LÉPÉS -->
-    <section class="card">
-      <h2><span class="badge">3. Lépés</span> A FiveM letöltése és telepítése</h2>
-      <p>A FiveM az a program, ami lehetővé teszi, hogy egyedi, módosított szervereken (mint a SanRPG) játszhass.</p>
-      
-      <ol>
-        <li>Nyisd meg a FiveM hivatalos weboldalát: <a href="https://fivem.net/" target="_blank">fivem.net</a></li>
-        <li>Kattints a piros <strong>„Download Client”</strong> gombra, majd fogadd el a feltételeket.</li>
-        <li>Nyisd meg a letöltött <code>FiveM.exe</code> fájlt.</li>
-        <li>A telepítő elindul és automatikusan frissíti magát.</li>
-        <li><strong>Ha megkérdezi, hol van a GTA V:</strong> Tallózd be neki azt a mappát, ahova a játékot telepítetted (például: <code>C:\Program Files\Steam\steamapps\common\Grand Theft Auto V</code> vagy <code>Epic Games\GTAV</code>).</li>
-      </ol>
-    </section>
-
-    <!-- 4. LÉPÉS -->
-    <section class="card">
-      <h2><span class="badge">4. Lépés</span> Discord és Fiók összekötés</h2>
-      <p>A szerver használatához érdemes felkészülni pár aprósággal:</p>
-      <ul>
-        <li><strong>Legyen megnyitva a Discord:</strong> Mielőtt elindítod a FiveM-et, mindig legyen megnyitva a Discord a gépeden. A szerver azonosításra használja.</li>
-        <li><strong>Lépj be a Discord szerverünkre:</strong> Csatlakozz a SanRPG közösséghez, hogy ne maradj le a szabályzatról, frissítésekről és a segítségről!</li>
-      </ul>
-      <a href="#" class="btn">Csatlakozás a Discord szerverre</a>
-    </section>
-
-    <!-- 5. LÉPÉS -->
-    <section class="card">
-      <h2><span class="badge">5. Lépés</span> Csatlakozás a SanRPG szerverre</h2>
-      <ol>
-        <li>Indítsd el a <strong>FiveM</strong>-et az asztalról.</li>
-        <li>Kattints a felső menüsávban a <strong>Play (Játék)</strong> gombra, vagy nyomd meg az <code>F8</code> billentyűt a billentyűzeteden.</li>
-        <li>A megnyíló fekete konzol ablakba írd be a következőt:
-          <br><br>
-          <code>connect play.sanrpg.hu</code> <em>(vagy a szerver pontos IP címét)</em>
-        </li>
-        <li>Nyomj egy <strong>Entert</strong>, és már tölt be is a szerver!</li>
-      </ol>
-
-      <div class="alert-box">
-        <p><strong>Tipp kezdőknek:</strong> Az első csatlakozásnál a FiveM letölti a szerverhez tartozó egyedi fájlokat (pályák, autók, ruhák). Ez a gépedtől és a netedtől függően pár percig eltarthat. Légy türelemmel!</p>
-      </div>
-    </section>
-
-    <!-- GYAKORI HIBÁK -->
-    <section class="card">
-      <h2>Gyakran Ismételt Kérdések & Hibaelhárítás</h2>
-      
-      <p><strong>Működik a játék PS4-en, PS5-ön vagy Xbox-on?</strong><br>
-      Nem. A FiveM és a SanRPG kizárólag <strong>PC-n (számítógépen)</strong> érhető el.</p>
-
-      <p><strong>Azt írja a FiveM, hogy nem találja a GTA V-öt! Mit tegyek?</strong><br>
-      Győződj meg róla, hogy a GTA V telepítve van, és legalább egyszer elindítottad a sztori módot. Ha kérdezi, kézzel mutasd meg neki a <code>GTA5.exe</code> fájl helyét.</p>
-
-      <p><strong>Elakadtál vagy segítségre van szükséged?</strong><br>
-      Ha bármilyen hibába ütközöl, nyiss egy jegyet (ticketet) a Discord szerverünkön, és az admincsapatunk örömmel segít neked!</p>
-    </section>
-
-  </main>
-
-  <footer>SanRPG Tutorial · Minden jog fenntartva.</footer>
-
-</body>
-</html>
+<header class="top"><div class="topin"><a class="brand" href="#top">San<span>RPG</span><small>Tutorial központ</small></a><nav class="topnav"><a href="#gta-vasarlas">GTA V</a><a href="#fivem">FiveM</a><a href="#csatlakozas">Csatlakozás</a><a href="#hibak">Hibaelhárítás</a><a class="top-external" href="https://sanrpg.hu/" target="_blank" rel="noopener">Főoldal</a><a class="top-external" href="https://discord.com/invite/Gbd9aS5uQW" target="_blank" rel="noopener">Discord</a><a class="top-external" href="https://forum.sanrpg.hu/" target="_blank" rel="noopener">FóruM</a></nav></div></header>
+<div class="hero" id="top"><div class="eyebrow">SANRPG / ÚTMUTATÓK</div><h1>Indulj el Los Santosban.<br><span>Mi segítünk az elején.</span></h1><p>Itt mindent megtalálsz ahhoz, hogy beszerezd a GTA V-öt, telepítsd a FiveM-et, és csatlakozz a SanRPG szerveréhez. Lépésről lépésre, érthetően.</p><div class="actions"><a class="btn primary" href="#kezdes">Kezdjük az elején →</a><a class="btn" href="#csatlakozas">Már telepítve van</a></div></div>
+<div class="notice"><strong>Fontos:</strong> a FiveM használatához jogtiszta, támogatott PC-s GTA V szükséges. A GTA V Legacy és Enhanced változat eltérhet, ezért ellenőrizd a FiveM hivatalos oldalán, melyik kliens illik a játékodhoz.</div>
+<div class="layout"><aside class="side"><input class="search" id="search" type="search" placeholder="Keresés az útmutatókban…" aria-label="Keresés"><nav id="nav"><div class="navlabel">Első lépések</div><a href="#kezdes">0. Mielőtt elkezded</a><a href="#gta-vasarlas">1. GTA V megvásárlása</a><a href="#gta-telepites">2. GTA V letöltése</a><a href="#elso-inditas">3. Első indítás</a><div class="navlabel">FiveM és SanRPG</div><a href="#fivem">4. FiveM telepítése</a><a href="#csatlakozas">5. Csatlakozás</a><a href="#elso-belepes">6. Első belépés</a><div class="navlabel">Segítség</div><a href="#kovetelmenyek">Gépigény és tárhely</a><a href="#hibak">Gyakori hibák</a><a href="#biztonsag">Biztonság</a><a href="#ellenorzo">Ellenőrzőlista</a></nav></aside>
+<main id="content">
+<section class="section" id="kezdes" data-search="előfeltétel pc windows internet fiók"><div class="head"><div class="num">00</div><div><h2>Mielőtt elkezded</h2><p class="lead">Ezekre lesz szükséged a telepítéshez.</p></div></div><ul class="check"><li>Windows 10 vagy Windows 11 rendszerű számítógép.</li><li>Megbízható internet és elegendő szabad tárhely.</li><li>Rockstar Games-fiók és a játékot birtokló áruházi fiók.</li><li>Jogtiszta, telepített és frissített GTA V PC-re.</li><li>FiveM a hivatalos weboldalról.</li></ul><div class="callout">Ha még nincs meg a GTA V, a vásárlással kezdd. Ha már telepítve van és elindul, ugorhatsz a FiveM részhez.</div></section>
+<section class="section" id="gta-vasarlas" data-search="gta v vásárlás steam epic rockstar megvenni legális"><div class="head"><div class="num">01</div><div><h2>GTA V megvásárlása</h2><p class="lead">A játékot hivatalos áruházból szerezd be.</p></div></div><p>A FiveM a GTA V PC-s változatára épül. Vásárlás előtt ellenőrizd, hogy PC-s verziót választasz.</p><div class="cards"><div class="card"><span class="tag">1. LEHETŐSÉG</span><h3>Steam</h3><p>A Steam kezeli a letöltést, a telepítést és a frissítéseket.</p><a href="https://store.steampowered.com/" target="_blank" rel="noopener">Steam áruház ↗</a></div><div class="card"><span class="tag">2. LEHETŐSÉG</span><h3>Epic Games Store</h3><p>Az Epic-fiókodhoz kerül a játék, a telepítést a launcher végzi.</p><a href="https://store.epicgames.com/" target="_blank" rel="noopener">Epic Games Store ↗</a></div><div class="card"><span class="tag">3. LEHETŐSÉG</span><h3>Rockstar Games</h3><p>A Rockstar hivatalos áruházából is megvásárolhatod.</p><a href="https://store.rockstargames.com/game/buy-gta-v" target="_blank" rel="noopener">Rockstar Store ↗</a></div><div class="card"><span class="tag">VÁSÁRLÁS ELŐTT</span><h3>Verzióellenőrzés</h3><p>A GTA V Legacy és Enhanced változat gépigénye és kompatibilitása eltérhet.</p><a href="https://fivem.net/" target="_blank" rel="noopener">FiveM hivatalos oldala ↗</a></div></div><div class="callout warn"><strong>Figyelem:</strong> kerüld az ismeretlen oldalakról származó „ingyenes GTA V” letöltéseket, torrenteket és módosított telepítőket.</div><h3>Ha már megvan a játék</h3><p>Nem kell újra megvásárolnod csak azért, mert FiveM-et szeretnél használni. Telepítsd abból az áruházból, ahol már birtoklod. A konzolos GTA V nem helyettesíti a PC-s változatot.</p></section>
+<section class="section" id="gta-telepites" data-search="gta letöltés telepítés steam epic launcher tárhely"><div class="head"><div class="num">02</div><div><h2>GTA V letöltése és telepítése</h2><p class="lead">A folyamat attól függ, hol vásároltad meg a játékot.</p></div></div><h3>Steam esetén</h3><div class="steps"><div class="step"><div class="stepn">1</div><div><strong>Nyisd meg a Steamet.</strong><p>Jelentkezz be abba a fiókba, amelyiken a GTA V megtalálható.</p></div></div><div class="step"><div class="stepn">2</div><div><strong>Nyisd meg a Könyvtárat.</strong><p>Keresd meg a Grand Theft Auto V-öt, majd kattints a Telepítés gombra.</p></div></div><div class="step"><div class="stepn">3</div><div><strong>Válassz telepítési helyet.</strong><p>Olyan meghajtót válassz, ahol van elég szabad hely. SSD használatával általában gyorsabb a betöltés.</p></div></div><div class="step"><div class="stepn">4</div><div><strong>Várd meg a letöltést.</strong><p>Ne kapcsold ki a gépet, amíg a telepítés és a szükséges frissítések tartanak.</p></div></div></div><h3>Epic Games Store esetén</h3><div class="steps"><div class="step"><div class="stepn">1</div><div><strong>Indítsd el az Epic Games Launchert.</strong><p>Jelentkezz be, majd nyisd meg a Könyvtárat.</p></div></div><div class="step"><div class="stepn">2</div><div><strong>Keresd meg a GTA V-öt.</strong><p>Kattints a Telepítés gombra, és válaszd ki a célmappát.</p></div></div><div class="step"><div class="stepn">3</div><div><strong>Várd meg a folyamat végét.</strong><p>A játék indítása előtt hagyd befejeződni a frissítéseket is.</p></div></div></div><h3>Rockstar Games Launcher esetén</h3><div class="steps"><div class="step"><div class="stepn">1</div><div><strong>Nyisd meg a Rockstar Games Launchert.</strong><p>Jelentkezz be a megfelelő Rockstar-fiókba.</p></div></div><div class="step"><div class="stepn">2</div><div><strong>Válaszd ki a GTA V-öt.</strong><p>A játék oldalán kattints az Install / Telepítés gombra.</p></div></div><div class="step"><div class="stepn">3</div><div><strong>Várd meg a telepítést és a frissítést.</strong><p>Ne szakítsd meg a folyamatot.</p></div></div></div><div class="callout">A letöltési idő az internet sebességétől és a számítógépedtől függ.</div></section>
+<section class="section" id="elso-inditas" data-search="első indítás gta bejelentkezés frissítés"><div class="head"><div class="num">03</div><div><h2>Indítsd el egyszer a GTA V-öt</h2><p class="lead">Ezt érdemes megtenni a FiveM telepítése előtt.</p></div></div><div class="steps"><div class="step"><div class="stepn">1</div><div><strong>Indítsd el a játékot a saját launcheréből.</strong><p>Steam esetén Steamből, Epic esetén Epicből, Rockstar-változatnál a Rockstar Games Launcherből.</p></div></div><div class="step"><div class="stepn">2</div><div><strong>Jelentkezz be, ha kéri.</strong><p>A Rockstar-fiók hitelesítésére szükség lehet.</p></div></div><div class="step"><div class="stepn">3</div><div><strong>Várd meg a frissítéseket.</strong><p>Ha a játék frissítést kér, hagyd befejeződni.</p></div></div><div class="step"><div class="stepn">4</div><div><strong>Ellenőrizd, hogy elindul-e.</strong><p>Ha a játék betölt, lépj ki belőle, és folytasd a FiveM telepítésével.</p></div></div></div><div class="callout warn">Ha a GTA V önmagában sem indul el, először az alapjáték hibáját javítsd meg.</div></section>
+<section class="section" id="fivem" data-search="fivem letöltés telepítés gta5.exe cfx legacy enhanced"><div class="head"><div class="num">04</div><div><h2>FiveM letöltése és telepítése</h2><p class="lead">A FiveM segítségével csatlakozhatsz a GTA V szerepjáték-szervereihez.</p></div></div><div class="callout warn"><strong>Verzió:</strong> a FiveM hivatalos oldalán ellenőrizd, hogy a telepített GTA V Legacy vagy Enhanced változatához való klienst használod-e.</div><div class="steps"><div class="step"><div class="stepn">1</div><div><strong>Nyisd meg a FiveM hivatalos oldalát.</strong><p>Csak innen töltsd le a klienst.</p><div class="links"><a href="https://fivem.net/" target="_blank" rel="noopener">FiveM letöltése ↗</a><a href="https://docs.fivem.net/docs/getting-started/installing-fivem/" target="_blank" rel="noopener">Hivatalos telepítési útmutató ↗</a></div></div></div><div class="step"><div class="stepn">2</div><div><strong>Töltsd le a klienst.</strong><p>Kattints a Download Client gombra, és olvasd el a megjelenő feltételeket.</p></div></div><div class="step"><div class="stepn">3</div><div><strong>Indítsd el a telepítőt.</strong><p>A Letöltések mappában keresd meg a letöltött FiveM telepítőfájlt.</p></div></div><div class="step"><div class="stepn">4</div><div><strong>Add meg a GTA V helyét, ha kéri.</strong><p>Tallózd be a játék mappájában található <code>GTA5.exe</code> fájlt.</p></div></div><div class="step"><div class="stepn">5</div><div><strong>Várd meg a frissítést.</strong><p>A FiveM letöltheti a szükséges fájlokat. Hagyd befejeződni a folyamatot.</p></div></div><div class="step"><div class="stepn">6</div><div><strong>Jelentkezz be, ha kéri.</strong><p>Kövesd a Cfx.re-fiókhoz kapcsolódó bejelentkezési utasításokat.</p></div></div></div><div class="callout good">Ha megjelenik a FiveM főmenüje és a szerverkereső, a telepítés sikerült.</div></section>
+<section class="section" id="csatlakozas" data-search="sanrpg csatlakozás szerverkereső ip cím connect"><div class="head"><div class="num">05</div><div><h2>Csatlakozás a SanRPG szerverhez</h2><p class="lead">Keresd meg a szervert a FiveM-ben.</p></div></div><div class="steps"><div class="step"><div class="stepn">1</div><div><strong>Indítsd el a FiveM-et.</strong><p>Várd meg, amíg betölt a főmenü.</p></div></div><div class="step"><div class="stepn">2</div><div><strong>Keress rá a SanRPG névre.</strong><p>A szerverlistában keresd a SanRPG-t, és ellenőrizd, hogy a megfelelő szervert választod.</p></div></div><div class="step"><div class="stepn">3</div><div><strong>Nyisd meg a szerver adatlapját.</strong><p>Olvasd el a szerver leírását és a csatlakozás feltételeit.</p></div></div><div class="step"><div class="stepn">4</div><div><strong>Kattints a Connect / Csatlakozás gombra.</strong><p>Az első belépés hosszabb lehet, mert a kliens letöltheti a szerverhez szükséges fájlokat.</p></div></div><div class="step"><div class="stepn">5</div><div><strong>Kövesd a képernyőn megjelenő utasításokat.</strong><p>Végezd el a kért bejelentkezést, karakterkészítést vagy szabályzat-elfogadást.</p></div></div></div><div class="callout warn"><strong>Nem találod a szervert?</strong> Ne használj találomra megadott IP-címet. A pontos csatlakozási címet a SanRPG hivatalos weboldalán vagy Discordján ellenőrizd. Az IP-cím nincs kitalálva vagy beégetve ebbe az útmutatóba.</div><div class="links"><a href="https://sanrpg.hu/" target="_blank" rel="noopener">SanRPG weboldal ↗</a></div></section>
+<section class="section" id="elso-belepes" data-search="első belépés karakter szabályzat szerepjáték discord"><div class="head"><div class="num">06</div><div><h2>Az első belépés után</h2><p class="lead">Pár dolog, amit érdemes elintézni, mielőtt belevágsz.</p></div></div><ul class="check"><li>Olvasd el a SanRPG aktuális szerver- és szerepjátékszabályzatát.</li><li>Ha kötelező a Discord-csatlakozás vagy a fiókösszekötés, kövesd a hivatalos leírást.</li><li>Készítsd el a karakteredet a szerver útmutatása szerint.</li><li>Figyeld a képernyőn megjelenő tippeket és információkat.</li><li>Ha elakadsz, a hivatalos támogatási csatornán kérj segítséget.</li></ul><div class="callout">A szerver saját rendszerei és szabályai változhatnak. Mindig a SanRPG aktuális tájékoztatása az irányadó.</div></section>
+<section class="section" id="kovetelmenyek" data-search="gépigény tárhely ram videókártya processzor windows legacy enhanced"><div class="head"><div class="num">07</div><div><h2>Gépigény és szabad tárhely</h2><p class="lead">A pontos követelmény a GTA V változatától függ.</p></div></div><p>A GTA V Enhanced általában erősebb számítógépet igényel, mint a Legacy. Az alábbiak tájékoztató jellegűek; a pontos és friss követelményeket a Rockstar és a FiveM oldalán ellenőrizd.</p><div class="cards"><div class="card"><span class="tag">LEGACY</span><h3>Régebbi gépekhez is megfelelő lehet</h3><p>Alacsonyabb gépigényű változat lehet, ha a használt FiveM-kliens és szerver támogatja.</p></div><div class="card"><span class="tag">ENHANCED</span><h3>Erősebb gép szükséges</h3><p>Újabb grafikai megoldásokat használ, ezért erősebb hardver kellhet.</p></div></div><ul class="check"><li>Legyen elég szabad hely a játéknak és a FiveM gyorsítótárának.</li><li>Frissítsd a videókártya illesztőprogramját.</li><li>Használj naprakész Windowst.</li><li>Akadozás esetén zárd be a felesleges programokat és csökkentsd a grafikai beállításokat.</li></ul><div class="links"><a href="https://support.rockstargames.com/" target="_blank" rel="noopener">Rockstar támogatás ↗</a><a href="https://docs.fivem.net/docs/client-manual/system-requirements/" target="_blank" rel="noopener">FiveM gépigény ↗</a></div></section>
+<section class="section" id="hibak" data-search="hiba hibaelhárítás crash összeomlik cache frissítés csatlakozás fps"><div class="head"><div class="num">08</div><div><h2>Gyakori hibák és megoldások</h2><p class="lead">Próbáld ki ezeket az alaplépéseket újratelepítés előtt.</p></div></div><details><summary>Nem indul el a GTA V</summary><p>Indítsd el a saját áruházad klienséből, ellenőrizd a frissítéseket, majd futtasd a játékfájlok ellenőrzését a launcher beállításaiban.</p></details><details><summary>A FiveM nem találja a GTA V-öt</summary><p>Ellenőrizd, hogy a játék telepítve van-e. Ha a FiveM kéri, tallózd be a megfelelő mappában lévő <code>GTA5.exe</code> fájlt. Ne válassz régi vagy véletlenszerű másolatot.</p></details><details><summary>Nem kompatibilis a GTA V verziója</summary><p>Ellenőrizd, hogy Legacy vagy Enhanced változat van-e telepítve, és a FiveM megfelelő kliensét használod-e. Frissítsd mindkettőt hivatalos forrásból.</p></details><details><summary>A FiveM sokáig tölt vagy frissít</summary><p>Az első indítás és az első csatlakozás hosszabb lehet. Ellenőrizd az internetet és a szabad tárhelyet, majd várd meg a folyamat végét.</p></details><details><summary>Csatlakozáskor hibát ír vagy kidob</summary><p>Olvasd el a teljes hibaüzenetet, indítsd újra a FiveM-et, és ellenőrizd a SanRPG hivatalos csatornáit, mert karbantartás is okozhatja a problémát.</p></details><details><summary>Kevés az FPS vagy akadozik a játék</summary><p>Csökkentsd a grafikai beállításokat, zárd be a háttérben futó programokat, ellenőrizd a gép hőmérsékletét, és frissítsd a videókártya illesztőprogramját.</p></details><details><summary>A vírusirtó blokkolja a FiveM-et</summary><p>Ellenőrizd, hogy a telepítő a hivatalos oldalról származik-e. Ne kapcsold ki tartósan a vírusirtót, és ne engedélyezz ismeretlen fájlokat.</p></details><details><summary>Mit próbáljak ki újratelepítés előtt?</summary><p>Indítsd újra a gépet, ellenőrizd a játékfájlokat, telepítsd a frissítéseket, és jegyezd fel a pontos hibaüzenetet. A teljes újratelepítés időigényes, ezért legyen az utolsó lehetőség.</p></details><div class="links"><a href="https://docs.fivem.net/docs/client-manual/" target="_blank" rel="noopener">FiveM dokumentáció ↗</a><a href="https://support.rockstargames.com/gta-v" target="_blank" rel="noopener">Rockstar támogatás ↗</a></div></section>
+<section class="section" id="biztonsag" data-search="biztonság csalás mod menü jelszó fiók vírus letöltés"><div class="head"><div class="num">09</div><div><h2>Biztonságos játék</h2><p class="lead">Védd a fiókodat és a számítógépedet.</p></div></div><ul class="check"><li>A GTA V-öt és a FiveM-et kizárólag hivatalos forrásból töltsd le.</li><li>Ne add meg másnak a Rockstar-, Steam-, Epic- vagy Cfx.re-fiókod jelszavát.</li><li>Ne tölts le ismeretlen „FPS boostert”, csalást vagy módosított klienst.</li><li>Ne futtass ismeretlen programot rendszergazdaként.</li><li>A szerver szabályzatát és hivatalos közleményeit mindig ellenőrizd.</li></ul></section>
+<section class="section" id="ellenorzo" data-search="ellenőrzőlista kész gta fivem telepítés csatlakozás"><div class="head"><div class="num">✓</div><div><h2>Ellenőrzőlista indulás előtt</h2><p class="lead">Pipáld ki, amin már túl vagy.</p></div></div><div class="progressbox"><div class="progressline"><span id="progressText">0 / 6 kész</span><span id="progressPct">0%</span></div><div class="bar"><div id="progressBar"></div></div><label class="task"><input type="checkbox" class="checktask"> Megvan a jogtiszta GTA V PC-s változata.</label><label class="task"><input type="checkbox" class="checktask"> A GTA V teljesen letöltött és naprakész.</label><label class="task"><input type="checkbox" class="checktask"> A GTA V legalább egyszer hiba nélkül elindult.</label><label class="task"><input type="checkbox" class="checktask"> Telepítettem a megfelelő FiveM-klienst.</label><label class="task"><input type="checkbox" class="checktask"> Megtaláltam a SanRPG hivatalos csatlakozási információit.</label><label class="task"><input type="checkbox" class="checktask"> Elolvastam a szerver szabályzatát.</label></div><div class="callout good">Ha minden pont kész, indulhatsz! Jó játékot kíván a SanRPG csapata.</div></section>
+</main></div>
+<footer><strong>SanRPG Tutorial</strong><br>Segítség a kezdéshez, egy helyen.<br>Ez a tájékoztató nem a Rockstar Games vagy a Cfx.re hivatalos támogatási oldala.</footer><a class="backtop" href="#top" aria-label="Vissza a tetejére">↑</a>
+<script>
+const search=document.getElementById('search'),sections=[...document.querySelectorAll('.section')],links=[...document.querySelectorAll('#nav a')];
+search.addEventListener('input',()=>{const q=search.value.trim().toLocaleLowerCase('hu');sections.forEach(s=>s.classList.toggle('hidden',!!q&&!(s.innerText+' '+(s.dataset.search||'')).toLocaleLowerCase('hu').includes(q)));links.forEach(a=>{const t=document.querySelector(a.getAttribute('href'));a.classList.toggle('hidden',!!q&&(!t||t.classList.contains('hidden')))});});
+links.forEach(a=>a.addEventListener('click',()=>{links.forEach(x=>x.classList.remove('active'));a.classList.add('active')}));
+const checks=[...document.querySelectorAll('.checktask')];function update(){const n=checks.filter(c=>c.checked).length,p=Math.round(n/checks.length*100);document.getElementById('progressText').textContent=`${n} / ${checks.length} kész`;document.getElementById('progressPct').textContent=p+'%';document.getElementById('progressBar').style.width=p+'%'}checks.forEach(c=>c.addEventListener('change',update));update();
+</script>
+</body></html>
